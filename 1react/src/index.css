@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #222;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #ddd;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+.card p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+.card .rating {
+    font-weight: bold;
+    color: #444;
+}
+
+.card .genre, .card .cast {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+.card .watch-link, .card button {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    /* background-color: #007BFF; */
+    /* color: white; */
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    /* margin-top: 1rem; */
+    border: none;
+}
+
+.card .watch-link:hover, .card button:hover {
+    background-color: #007BFF;
+    transform: translateY(-2px);
+    color: white;
+}
